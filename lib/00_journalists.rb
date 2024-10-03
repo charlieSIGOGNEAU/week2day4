@@ -70,14 +70,14 @@ def classement(array)
     if array[i].length==array[i+1].length
       quantite+=1
     else
-      puts " il y a #{quantite} noms de #{array[i].length} caracter"
+      puts " il y a #{quantite} noms de #{array[i].length-1} caracter"
       quantite=1
     end
   end
   if array[array.length-2]==array[array.length-1]
-    puts "il y a #{quantite} noms de #{array[array.length-1].length} caracter"
+    puts "il y a #{quantite} noms de #{array[array.length-1].length-1} caracter"
   else
-    puts "il y a 1 nom de #{array[array.length-1].length} caracter"
+    puts "il y a 1 nom de #{array[array.length-1].length-1} caracter"
   end
 end
 
